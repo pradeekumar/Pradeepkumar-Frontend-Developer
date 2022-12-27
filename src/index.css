@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header--wrapper .logo {
+    max-height: 30px;
+}
+.banner--wraper .feature-image{
+    max-height: 400px;
+    margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.product--lists .product ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.product--lists .product ul > li {
+    list-style: none;
+    padding: 10px;
+}
+.product{
+    height: 100%;
+    cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+    .product table{
+        border-collapse: collapse;
+        font-size: 0.9em;
+        min-width: 400px;
+    }
+  }
+.product table  td {
+  padding: 5px;
+}
+.product table .children td,.product table .children th {
+    padding: 5px;
+}
+select{
+    height: 42px;
+}
+.pagination{
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.disabled{
+    color: #b7b7c0;
 }
